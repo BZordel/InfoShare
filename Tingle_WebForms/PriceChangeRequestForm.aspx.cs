@@ -21,7 +21,7 @@ namespace Tingle_WebForms
             {
                 if (formAction == "add")
                 {
-                    msg = "Expedited Order Form successfully submitted.";
+                    msg = "Price Change Request Form successfully submitted.";
                     pnlCompleted.Visible = true;
                     pnlForm.Visible = false;
                 }
@@ -184,6 +184,7 @@ namespace Tingle_WebForms
 
                 bool result = msg.SendMail("InfoShare@wctingle.com", "rzordel@gmail.com", "Price Change Request Form Submission", bodyHtml.ToString(), submittedForm, true);
                 result = msg.SendMail("InfoShare@wctingle.com", submittedByuserEmail, "Price Change Request Form Submission", bodyHtml.ToString(), submittedForm, false);
+                result = msg.SendMail("InfoShare@wctingle.com", txtCCFormTo.Text, "Price Change Request Form Submission", bodyHtml.ToString(), submittedForm, false);
 
                 txtCustomer.Enabled = false;
                 txtLineNumber.Enabled = false;

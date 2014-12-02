@@ -1,8 +1,1 @@
-﻿1. CC FORM To - Send to this address, separately
-2. Complete All Forms
-3. Fix Date Range search to pick up To Date
-4. Allow Forms to be brought back from Archive
-5. Checkbox in Ship To section to show/hide ship to panel
-6. Send Email on Complete status, popup with Notes field and additional CC Form To field
-7. Add Reporting Dashboard with ALL forms In Progress and On Hold
-8. Add Company option to all forms - Tingle or Summit
+﻿7. Add Reporting Dashboard with ALL forms In Progress and On Hold

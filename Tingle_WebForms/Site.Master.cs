@@ -88,9 +88,11 @@ namespace Tingle_WebForms
                     if (currentUser.UserRole.RoleName == "ReportsUser" || currentUser.UserRole.RoleName == "ReportsAdmin" || currentUser.UserRole.RoleName == "SuperUser")
                     {
                         miReports.Visible = true;
+                        phSearch.Visible = true;
                     }
                     else
                     {
+                        phSearch.Visible = false;
                         miReports.Visible = false;
                     }
 
@@ -108,6 +110,7 @@ namespace Tingle_WebForms
                     miForms.Visible = false;
                     miReports.Visible = false;
                     miAdmin.Visible = false;
+                    phSearch.Visible = false;
                     Response.Redirect("/Unauthorized");
                 }
 
@@ -119,6 +122,15 @@ namespace Tingle_WebForms
             }
 
 
+        }
+
+        protected void txtSearchSubmit_Click(object sender, ImageClickEventArgs e)
+        {
+            if (txtSearch.Text != "")
+            {
+                Session["SearchValue"] = txtSearch.Text;
+                Response.Redirect("/Search");
+            }
         }
     }
 }

@@ -17,16 +17,52 @@
                                     <a href="ExpeditedOrderForm.aspx"></a>
                                 </div>
                             </asp:PlaceHolder>
+                            <asp:PlaceHolder ID="phFavoriteDirectOrder" runat="server" Visible="false">
+                                <div class="FormButton">
+                                    <div class="FavFormButtonText">Direct Order</div>
+                                    <a href="DirectOrderForm.aspx"></a>
+                                </div>
+                            </asp:PlaceHolder>
+                            <asp:PlaceHolder ID="phFavoriteHotRush" runat="server" Visible="false">
+                                <div class="FormButton">
+                                    <div class="FavFormButtonText">Hot Rush</div>
+                                    <a href="HotRushForm.aspx"></a>
+                                </div>
+                            </asp:PlaceHolder>
+                            <asp:PlaceHolder ID="phFavoriteOrderCancellation" runat="server" Visible="false">
+                                <div class="FormButton">
+                                    <div class="FavFormButtonText2">Order<br />Cancellation</div>
+                                    <a href="OrderCancellationForm.aspx"></a>
+                                </div>
+                            </asp:PlaceHolder>
+                            <asp:PlaceHolder ID="phFavoriteMustInclude" runat="server" Visible="false">
+                                <div class="FormButton">
+                                    <div class="FavFormButtonText">Must Include</div>
+                                    <a href="MustIncludeForm.aspx"></a>
+                                </div>
+                            </asp:PlaceHolder>
+                            <asp:PlaceHolder ID="phFavoriteSampleRequest" runat="server" Visible="false">
+                                <div class="FormButton">
+                                    <div class="FavFormButtonText">Sample Request</div>
+                                    <a href="SampleRequestForm.aspx"></a>
+                                </div>
+                            </asp:PlaceHolder>
+                            <asp:PlaceHolder ID="phFavoriteLowInventory" runat="server" Visible="false">
+                                <div class="FormButton">
+                                    <div class="FavFormButtonText">Low Inventory</div>
+                                    <a href="LowInventoryForm.aspx"></a>
+                                </div>
+                            </asp:PlaceHolder>
                             <asp:PlaceHolder ID="phFavoritePriceChangeRequest" runat="server" Visible="false">
                                 <div class="FormButton">
                                     <div class="FavFormButtonText2">Price Change<br />Request</div>
                                     <a href="PriceChangeRequestForm.aspx"></a>
                                 </div>
                             </asp:PlaceHolder>
-                            <asp:PlaceHolder ID="phFavoriteOrderCancellation" runat="server" Visible="false">
+                            <asp:PlaceHolder ID="phFavoriteRequestForCheck" runat="server" Visible="false">
                                 <div class="FormButton">
-                                    <div class="FavFormButtonText">Order Cancellation</div>
-                                    <a href="OrderCancellationForm.aspx"></a>
+                                    <div class="FavFormButtonText2">Request For<br />Check</div>
+                                    <a href="RequestForCheckForm.aspx"></a>
                                 </div>
                             </asp:PlaceHolder>
                         </ContentTemplate>
@@ -38,42 +74,82 @@
                   <div>
                     <asp:UpdatePanel runat="server" ID="UpdatePanel1">
                         <ContentTemplate>
-                          <div style="width:100%; text-align:right; font-size:.9em">
-                                <input type="checkbox" checked="checked" onclick="return false;" />Favorite
-                          </div>
-                          <div class="FormButton">
+                            <div class="FormButton">
                                 <div class="formButtonCBDiv">
                                   <asp:CheckBox id="cbFavoriteExpeditedOrder" runat="server" OnCheckedChanged="cbFavoriteExpeditedOrder_CheckedChanged" AutoPostBack="true" />
                                 </div>
                               <div class="FormButtonText">Expedited Order</div>
                               <a href="ExpeditedOrderForm.aspx"></a>
-                          </div>
-                          <div class="FormButton">
+                            </div>
+                            <div class="FormButton">
+                                <div class="formButtonCBDiv">
+                                  <asp:CheckBox id="cbFavoriteDirectOrder" runat="server" OnCheckedChanged="cbFavoriteDirectOrder_CheckedChanged" AutoPostBack="true" />
+                                </div>
+                              <div class="FormButtonText">Direct Order</div>
+                              <a href="DirectOrderForm.aspx"></a>
+                            </div>
+                            <div class="FormButton">
+                                <div class="formButtonCBDiv">
+                                  <asp:CheckBox id="cbFavoriteHotRush" runat="server" OnCheckedChanged="cbFavoriteHotRush_CheckedChanged" AutoPostBack="true" />
+                                </div>
+                              <div class="FormButtonText">Hot Rush</div>
+                              <a href="HotRushForm.aspx"></a>
+                            </div>
+                            <div class="FormButton">
                                 <div class="formButtonCBDiv">
                                   <asp:CheckBox id="cbFavoriteOrderCancellation" runat="server" OnCheckedChanged="cbFavoriteOrderCancellation_CheckedChanged" AutoPostBack="true" />
                                 </div>
-                              <div class="FormButtonText">Order Cancellation</div>
+                              <div class="FormButtonText2">Order<br />Cancellation</div>
                               <a href="OrderCancellationForm.aspx"></a>
-                          </div>
+                            </div>
+                            <div class="FormButton">
+                                <div class="formButtonCBDiv">
+                                  <asp:CheckBox id="cbFavoriteMustInclude" runat="server" OnCheckedChanged="cbFavoriteMustInclude_CheckedChanged" AutoPostBack="true" />
+                                </div>
+                              <div class="FormButtonText">Must Include</div>
+                              <a href="MustIncludeForm.aspx"></a>
+                            </div>
                         </ContentTemplate>
                     </asp:UpdatePanel>
                   </div>
                   <h3>Inventory Forms</h3>
-                  <div></div>
-
+                  <div>
+                    <asp:UpdatePanel runat="server" ID="UpdatePanel3">
+                        <ContentTemplate>
+                            <div class="FormButton">
+                                <div class="formButtonCBDiv">
+                                    <asp:CheckBox id="cbFavoriteSampleRequest" runat="server" OnCheckedChanged="cbFavoriteSampleRequest_CheckedChanged" AutoPostBack="true" />
+                                </div>
+                                <div class="FormButtonText">Sample Request</div>
+                                <a href="SampleRequestForm.aspx"></a>
+                            </div>
+                            <div class="FormButton">
+                                <div class="formButtonCBDiv">
+                                    <asp:CheckBox id="cbFavoriteLowInventory" runat="server" OnCheckedChanged="cbFavoriteLowInventory_CheckedChanged" AutoPostBack="true" />
+                                </div>
+                                <div class="FormButtonText">Low Inventory</div>
+                                <a href="LowInventoryForm.aspx"></a>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                  </div>
                   <h3>Pricing Forms</h3>
                   <div>
                     <asp:UpdatePanel runat="server" ID="UpdatePanel2">
                         <ContentTemplate>
-                          <div style="width:100%; text-align:right; font-size:.9em">
-                                <input type="checkbox" checked="checked" onclick="return false;" />Favorite
-                          </div>
-                          <div class="FormButton">
+                            <div class="FormButton">
                                 <div class="formButtonCBDiv">
-                                  <asp:CheckBox id="cbFavoritePriceChangeRequest" runat="server" OnCheckedChanged="cbFavoritePriceChangeRequest_CheckedChanged" AutoPostBack="true" />
+                                    <asp:CheckBox id="cbFavoritePriceChangeRequest" runat="server" OnCheckedChanged="cbFavoritePriceChangeRequest_CheckedChanged" AutoPostBack="true" />
                                 </div>
-                              <div class="FormButtonText2">Price Change<br />Request</div>
-                              <a href="PriceChangeRequestForm.aspx"></a>
+                                <div class="FormButtonText2">Price Change<br />Request</div>
+                                <a href="PriceChangeRequestForm.aspx"></a>
+                            </div>
+                            <div class="FormButton">
+                                <div class="formButtonCBDiv">
+                                  <asp:CheckBox id="cbFavoriteRequestForCheck" runat="server" OnCheckedChanged="cbFavoriteRequestForCheck_CheckedChanged" AutoPostBack="true" />
+                                </div>
+                              <div class="FormButtonText2">Request For<br />Check</div>
+                              <a href="RequestForCheckForm.aspx"></a>
                           </div>
                         </ContentTemplate>
                     </asp:UpdatePanel>
@@ -82,10 +158,6 @@
                   <h3>Setup Forms</h3>
                   <div></div>
                 </div>
-           
-
-                <!--<asp:ListItem Text="Expedited Order Form" Value="ExpeditedOrderForm.aspx"></asp:ListItem>-->
-                <!--<asp:Button ID="btnSubmit" runat="server" Text="Submit"  Width="150" Height="150" CssClass="reportButton" BorderStyle="Outset" />-->
             </div>
 <script type="text/javascript">
     $(document).ready(function () {

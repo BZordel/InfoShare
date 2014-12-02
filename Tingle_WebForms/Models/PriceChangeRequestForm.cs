@@ -60,5 +60,11 @@ namespace Tingle_WebForms.Models
 
         [MaxLength(100)]
         public string RequestHandler { get; set; }
+
+        [MaxLength(4000)]
+        public string CompletedNotes { get; set; }
+
+        [MaxLength(1000)]
+        public string CCCompletedFormToEmail { get; set; }
     }
 }

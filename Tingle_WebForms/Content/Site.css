@@ -1,102 +1,247 @@
-﻿html {    background-color: #ffffff;    margin: 0;    padding: 0;   }
+﻿html {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
 
-body {    background-color: #ffffff;    border-top: solid 15px #bb4342;    color: #333;    font-size: .85em;    font-family: Arial;    margin: 0;    padding: 0;   }
+body {
+    background-color: #ffffff;
+    border-top: solid 15px #bb4342;
+    color: #333;
+    font-size: .85em;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
 
-a, a:visited {    color: #bb4342;    outline: none;    padding-left: 3px;    padding-right: 3px;    text-decoration: underline; }
+a, a:visited {
+    color: #bb4342;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: underline;
+}
 
-header, footer, hgroup, nav, section {    display: block;   }
+header, footer, hgroup, nav, section {
+    display: block;
+}
 
-mark {    background-color: #a6dbed;    padding-left: 5px;    padding-right: 5px;   }
+mark {
+    background-color: #a6dbed;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 
-h1, h2, h3, h4, h5, h6 {    color: #000;    margin-bottom: 0;    padding-bottom: 0; }
+h1, h2, h3, h4, h5, h6 {
+    color: #000;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
 
-h1 {    font-size: 2em; }
+h1 {
+    font-size: 2em;
+}
 
-h2 {    font-size: 1.75em;  }
+h2 {
+    font-size: 1.75em;
+}
 
-h3 {    font-size: 1.2em;   }
+h3 {
+    font-size: 1.2em;
+}
 
-.float-left {    float: left;   }
+.float-left {
+    float: left;
+}
 
-.float-right {    float: right; }
+.float-right {
+    float: right;
+}
 
-.clear-fix:after {    content: ".";    clear: both;    display: block;    height: 0;    visibility: hidden; }
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 
 
 /*-----------------------------------------main layout---------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
 
-.content-wrapper {    margin: 0 auto;    max-width: 960px;  }
+.content-wrapper {
+    margin: 0 auto;
+    max-width: 960px;
+}
 
-#body {    background-color: #FFFFFF;    clear: both;    padding-bottom: 35px;  }
+#body {
+    background-color: #FFFFFF;
+    clear: both;
+    padding-bottom: 35px;
+}
 
-.main-content {     padding-top: 20px;        min-height:400px;    }
+.main-content {
+    padding-top: 20px;
+    min-height: 400px;
+}
 
-header  {        }
-    
-footer {    clear: both;    background-color: #bb4342;    font-size: 12px;    height: 96px;    text-align: center;    padding-top:40px;    color: white;    }
+header {
+}
+
+footer {
+    clear: both;
+    background-color: #bb4342;
+    font-size: 12px;
+    height: 96px;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+}
 
 
 /*---------------------------------------site title------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
-.site-title {    color: #c8c8c8;    font-family: Arial;    font-size: 2.3em;    margin: 0;  }
+.site-title {
+    color: #c8c8c8;
+    font-family: Arial;
+    font-size: 2.3em;
+    margin: 0;
+}
 
-.site-title a, .site-title a:hover, .site-title a:active {    background: none;    color: #c8c8c8;    outline: none;    text-decoration: none;  }
+    .site-title a, .site-title a:hover, .site-title a:active {
+        background: none;
+        color: #c8c8c8;
+        outline: none;
+        text-decoration: none;
+    }
 
 
 /*-----------------------------------------------login---------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
-#login {    display: block;    font-size: .85em;    margin: 0 0 10px;    text-align: right; }
+#login {
+    display: block;
+    font-size: .85em;
+    margin: 0 0 10px;
+    text-align: right;
+}
 
-    #login a {        background-color: #d3dce0;        margin-left: 10px;        margin-right: 3px;        padding: 2px 3px;        text-decoration: none;    }
+    #login a {
+        background-color: #d3dce0;
+        margin-left: 10px;
+        margin-right: 3px;
+        padding: 2px 3px;
+        text-decoration: none;
+    }
 
-    #login a.username {        background: none;        margin-left: 0px;        text-decoration: underline;    }
+        #login a.username {
+            background: none;
+            margin-left: 0px;
+            text-decoration: underline;
+        }
 
-    #login ul {        margin: 0;    }
+    #login ul {
+        margin: 0;
+    }
 
-    #login li {        display: inline;        list-style: none;    }
+    #login li {
+        display: inline;
+        list-style: none;
+    }
 
 
 /*----------------------------------------------MENU-----------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
 
-ul#menu {    font-size: 1.3em;    font-weight: 600;    margin: 0 0 5px;    padding-left:10px;   padding-right:10px;   padding-bottom:5px;        text-align: right;      background-color:#bb4342; 
-             text-align:center;     padding-top:5px;
+ul#menu {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0 0 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    text-align: right;
+    background-color: #bb4342;
+    text-align: center;
+    padding-top: 5px;
 }
 
-    ul#menu li {        display: inline;        list-style: none;        padding: 15px;    }
+    ul#menu li {
+        display: inline;
+        list-style: none;
+        padding: 15px;
+    }
 
-        ul#menu li a {            background: none;            color: #FFF;            text-decoration: none;        }
+        ul#menu li a {
+            background: none;
+            color: #FFF;
+            text-decoration: none;
+        }
 
-        ul#menu li a:hover {            color: #c8c8c8;            text-decoration: none;        }
+            ul#menu li a:hover {
+                color: #c8c8c8;
+                text-decoration: none;
+            }
 
 
 /*-------------------------------------info and errors---------------------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
 
-.message-info {    border: 1px solid;    clear: both;    padding: 10px 20px;    }
+.message-info {
+    border: 1px solid;
+    clear: both;
+    padding: 10px 20px;
+}
 
-.message-error {    clear: both;    color: #e80c4d;    font-size: 1.1em;    font-weight: bold;    margin: 20px 0 10px 0;    }
+.message-error {
+    clear: both;
+    color: #e80c4d;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
 
-.message-success {    color: #7ac0da;    font-size: 1.3em;    font-weight: bold;    margin: 20px 0 10px 0;  }
+.message-success {
+    color: #7ac0da;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
 
-.error {    color: #e80c4d; }
+.error {
+    color: #e80c4d;
+}
 
 
 /*----------------------------------styles for validation helpers----------------------------------*/
 /*-------------------------------------------------------------------------------------------------*/
 
-.field-validation-error {    color: #e80c4d;    font-weight: bold;  }
+.field-validation-error {
+    color: #e80c4d;
+    font-weight: bold;
+}
 
-.field-validation-valid {    display: none; }
+.field-validation-valid {
+    display: none;
+}
 
-input.input-validation-error {    border: 1px solid #e80c4d;    }
+input.input-validation-error {
+    border: 1px solid #e80c4d;
+}
 
-input[type="checkbox"].input-validation-error {    border: 0 none;  }
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
 
-.validation-summary-errors {    color: #e80c4d;    font-weight: bold;    font-size: 1.1em;  }
+.validation-summary-errors {
+    color: #e80c4d;
+    font-weight: bold;
+    font-size: 1.1em;
+}
 
-.validation-summary-valid {    display: none;   }
+.validation-summary-valid {
+    display: none;
+}
 
 
 /*----------------------------------------Mobile Styles--------------------------------------------*/
@@ -105,136 +250,323 @@ input[type="checkbox"].input-validation-error {    border: 0 none;  }
 @media only screen and (max-width: 850px) {
 
     /* header */
-    header .float-left, header .float-right {        float: none;    }
+    header .float-left, header .float-right {
+        float: none;
+    }
 
     /* logo */
-    header .site-title {        margin: 10px;        text-align: center;    }
+    header .site-title {
+        margin: 10px;
+        text-align: center;
+    }
 
     /* login */
-    #login {        font-size: .85em;        margin: 0 0 12px;        text-align: center;    }
+    #login {
+        font-size: .85em;
+        margin: 0 0 12px;
+        text-align: center;
+    }
 
-        #login ul {            margin: 5px 0;            padding: 0;        }
+        #login ul {
+            margin: 5px 0;
+            padding: 0;
+        }
 
-        #login li {            display: inline;            list-style: none;            margin: 0;            padding: 0;        }
+        #login li {
+            display: inline;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
 
-        #login a {            background: none;            color: #999;            font-weight: 600;            margin: 2px;            padding: 0;        }
+        #login a {
+            background: none;
+            color: #999;
+            font-weight: 600;
+            margin: 2px;
+            padding: 0;
+        }
 
-        #login a:hover {            color: #333;        }
+            #login a:hover {
+                color: #333;
+            }
 
     /* menu */
-    nav {        margin-bottom: 5px;    }
+    nav {
+        margin-bottom: 5px;
+    }
 
-    ul#menu {        margin: 0;        padding: 0;        text-align: center;    }
+    ul#menu {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
 
-        ul#menu li {            margin: 0;            padding: 0;   border: 1px solid black;        }
+        ul#menu li {
+            margin: 0;
+            padding: 0;
+            border: 1px solid black;
+        }
 
     /*main layout*/
     .main-content,
-    .featured + .main-content {        background-position: 10px 0;    }
+    .featured + .main-content {
+        background-position: 10px 0;
+    }
 
-    .content-wrapper {        padding-right: 10px;        padding-left: 10px;    }
+    .content-wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
 
-    .featured .content-wrapper {        padding: 10px;    }
+    .featured .content-wrapper {
+        padding: 10px;
+    }
 
     /* page content */
-    article, aside {        float: none;        width: 100%;    }
+    article, aside {
+        float: none;
+        width: 100%;
+    }
 
     /* login page */
-    #loginForm {        border-right: none;        float: none;        width: auto;    }
+    #loginForm {
+        border-right: none;
+        float: none;
+        width: auto;
+    }
 
-        #loginForm .validation-error {    display: block;    margin-left: 15px;   }
+        #loginForm .validation-error {
+            display: block;
+            margin-left: 15px;
+        }
 
-    #socialLoginForm {    margin-left: 0;    float: none;     width: auto;    }
+    #socialLoginForm {
+        margin-left: 0;
+        float: none;
+        width: auto;
+    }
 
     /* footer
     ----------------------------------------------------------*/
-    footer .float-left, footer .float-right {    float: none;    }
+    footer .float-left, footer .float-right {
+        float: none;
+    }
 
-    footer {    text-align: center;    height: auto;    padding: 10px 0;    }
+    footer {
+        text-align: center;
+        height: auto;
+        padding: 10px 0;
+    }
 
-        footer p {    margin: 0;   }
+        footer p {
+            margin: 0;
+        }
 }
 /* END: Mobile Styles */
 
 /*-------------------------------------------NEW--------------------------------------------*/
 /*------------------------------------------------------------------------------------------*/
 
-#MainContent_dvReport {    margin-left: auto;    margin-right: auto;    }
+#MainContent_dvReport {
+    margin-left: auto;
+    margin-right: auto;
+}
 
-#MainContent_lblMessage {    font-size: 14px;    font-weight: bold; }
+#MainContent_lblMessage {
+    font-size: 14px;
+    font-weight: bold;
+}
 
-#MainContent_ddlForm {    background-color:#d0614e;    color:#FFF;    font-size: 24px;    border:2px solid #bc4445; }
+#MainContent_ddlForm {
+    background-color: #d0614e;
+    color: #FFF;
+    font-size: 24px;
+    border: 2px solid #bc4445;
+}
 
-table {    border: 4px solid #d0604c;    background-color:#FFF;    width:100%;    }
+table {
+    border: 4px solid #d0604c;
+    background-color: #FFF;
+    width: 100%;
+}
 
-td {    width:25%;    text-align:center;    }
+td {
+    width: 25%;
+    text-align: center;
+}
 
-.tdheader {    text-align: center;    vertical-align: middle;    font-weight: bold;    font-size: 20px;   border: 4px solid #d0604c;    background-color:#bc4445;   color:#FFF;    }
+.tdheader {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 20px;
+    border: 4px solid #d0604c;
+    background-color: #bc4445;
+    color: #FFF;
+}
 
-.tdright {    text-align:right;    font-size:14px;    font-weight:bold;     color:#bc4445;    padding:10px;   }
+.tdright {
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+    color: #bc4445;
+    padding: 10px;
+}
 
-.tdleft {    text-align:left;   font-size:14px;    font-weight:bold;   color:#bc4445;    padding:10px 30px 10px 10px;    }
+.tdleft {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+    color: #bc4445;
+    padding: 10px 30px 10px 10px;
+}
 
-.tdcenter {    text-align:center;   font-size:14px;  font-weight:bold;    color:#bc4445;    padding:10px;  }
+.tdcenter {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #bc4445;
+    padding: 10px;
+}
 
-.tdsectionheader {    text-align:left;  font-size:16px;   font-weight:bold;  border: 4px solid #d0604c;    color:white;    background-color:#bc4445;  }
+.tdsectionheader {
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    border: 4px solid #d0604c;
+    color: white;
+    background-color: #bc4445;
+}
 
-.tdcenter {    text-align: center;    font-size: 14px;    font-weight: bold;    padding:10px;   }
+.tdcenter {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+}
 
-.divcenter {    width: 100%;    text-align: center;    font-weight: bold;    font-size: 14px;   }
+.divcenter {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
 
-.reportrow {    text-align: center;    vertical-align: middle;    font-size: 14px;    border-bottom: 4px solid #d0604c; }
+.reportrow {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 14px;
+    border-bottom: 4px solid #d0604c;
+}
 
-.reportButton {    background-color: #bb4342;    height: 150px;    width: 150px;    font-size:18pt;    color:#000;    text-align:center;    border:3px outset #FFF; }
+.reportButton {
+    background-color: #bb4342;
+    height: 150px;
+    width: 150px;
+    font-size: 18pt;
+    color: #000;
+    text-align: center;
+    border: 3px outset #FFF;
+}
 
-.formButton {    background-color: #bb4342;    height: 150px;    width: 150px;    font-size:12pt;    color:#FFF;    text-align:center;    border:3px outset #FFF; border-radius:8px;    margin:10px; }
+.formButton {
+    background-color: #bb4342;
+    height: 150px;
+    width: 150px;
+    font-size: 12pt;
+    color: #FFF;
+    text-align: center;
+    border: 3px outset #FFF;
+    border-radius: 8px;
+    margin: 10px;
+}
 
-.normalButton {    background-color: #d0614e;    border: 3px solid #FFF;    padding: 7px;    color:#000;    font-weight:600;    font-size:14px; border-radius:9px;  border:1px solid black;}
+.normalButton {
+    background-color: #d0614e;
+    border: 3px solid #FFF;
+    padding: 7px;
+    color: #000;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 9px;
+    border: 1px solid black;
+    text-decoration:none;
+}
 
-.normalButton:hover {    background-color: #d0614e;    border: 3px solid #FFF;    padding: 7px;    color:#000;    font-weight:600;    font-size:14px; border-radius:14px;  border:1px solid white;}
+    .normalButton:hover {
+        background-color: #d0614e;
+        border: 3px solid #FFF;
+        padding: 7px;
+        color: #FFF;
+        font-weight: 600;
+        font-size: 14px;
+        border-radius: 14px;
+        border: 1px solid white;
+        cursor: pointer;
+        text-decoration:none;
+    }
 
-.detailValues {    color: #000; }
+.detailValues {
+    color: #000;
+}
 
-.smallText {    font-size: 10px;    color: #d0614e; }
+.smallText {
+    font-size: 12px;
+    color: #d0614e;
+}
 
-.valErrors {    text-align:center;  }
+.valErrors {
+    text-align: center;
+}
 
-.largeFont {    font-weight: bold;    font-size: 24px;   }
+.largeFont {
+    font-weight: bold;
+    font-size: 24px;
+}
 
-input[type="text"] {    width:250px;    font-size:14px;     padding: 5px;     }
+input[type="text"] {
+    width: 250px;
+    font-size: 14px;
+    padding: 5px;
+}
 
 
-.EmailLabels {    color: #000;  }
+.EmailLabels {
+    color: #000;
+}
 
-.EmailValues {    color: #bc4445;   }
+.EmailValues {
+    color: #bc4445;
+}
 
 div.FormButton {
     position: relative;
-    background-color: #bb4342;    
-    height: 150px;    
-    width: 150px;    
-    font-size:12pt;    
-    color:#FFF;    
-    text-align:center;    
-    border:3px outset #FFF; 
-    border-radius:8px;    
-    margin:10px;
-    vertical-align:middle;
-    float:left;
+    background-color: #bb4342;
+    height: 150px;
+    width: 150px;
+    font-size: 12pt;
+    color: #FFF;
+    text-align: center;
+    border: 3px outset #FFF;
+    border-radius: 8px;
+    margin: 10px;
+    vertical-align: middle;
+    float: left;
 }
- 
-div.FormButton a {
-    position: absolute;
-    width: 100%;
-    height:90%;
-    top: 10%;
-    left: 0;
-    text-decoration: none; 
-    z-index: 10; 
-    background-color: #FFF; /* Fix to make div clickable in IE */
-    opacity: 0; /* Fix to make div clickable in IE */
-    filter: alpha(opacity=1); /* Fix to make div clickable in IE */
-}
+
+    div.FormButton a {
+        position: absolute;
+        width: 100%;
+        height: 90%;
+        top: 10%;
+        left: 0;
+        text-decoration: none;
+        z-index: 10;
+        background-color: #FFF; /* Fix to make div clickable in IE */
+        opacity: 0; /* Fix to make div clickable in IE */
+        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    }
 
 .FormButtonText {
     margin-top: 33%;
@@ -278,30 +610,27 @@ div.FormButton a {
 }
 
 .formButtonCBDiv {
-    text-align:right;
-    z-index:20;
-    width:100%;
-    height:10%;
-    position:relative;
-
+    text-align: right;
+    z-index: 20;
+    width: 100%;
+    height: 10%;
+    position: relative;
 }
 
-#accordion .ui-accordion-header, 
-#accordion2 .ui-accordion-header, 
+#accordion .ui-accordion-header,
+#accordion2 .ui-accordion-header,
 #accordion3 .ui-accordion-header,
 #accordion4 .ui-accordion-header,
-#accordion5 .ui-accordion-header
-{  
-    text-align:left;
+#accordion5 .ui-accordion-header {
+    text-align: left;
 }
 
-#accordion .ui-accordion-content, 
-#accordion2 .ui-accordion-content, 
+#accordion .ui-accordion-content,
+#accordion2 .ui-accordion-content,
 #accordion3 .ui-accordion-content,
 #accordion4 .ui-accordion-content,
-#accordion5 .ui-accordion-content
-{
-    padding-top:5px;
+#accordion5 .ui-accordion-content {
+    padding-top: 5px;
 }
 
 
@@ -313,11 +642,36 @@ div.FormButton a {
     text-decoration: underline;
 }
 
-.LinkButtonFav:hover {
-    color: #000;
-    outline: medium none;
-    padding-left: 3px;
-    padding-right: 3px;
-    text-decoration: underline;
+    .LinkButtonFav:hover {
+        color: #000;
+        outline: medium none;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-decoration: underline;
+    }
 
+
+.tdcenterSmall {
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: #bc4445;
+    padding: 5px;
 }
+
+.ReportLinkButton {
+    color: #bb4342;
+    outline: medium none;
+}
+
+    .ReportLinkButton:hover {
+        color: #000;
+        outline: medium none;
+    }
+
+
+
+
+
+
+

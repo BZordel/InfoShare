@@ -49,13 +49,22 @@ namespace Tingle_WebForms {
         protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteExpeditedOrder;
         
         /// <summary>
-        /// phFavoritePriceChangeRequest control.
+        /// phFavoriteDirectOrder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder phFavoritePriceChangeRequest;
+        protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteDirectOrder;
+        
+        /// <summary>
+        /// phFavoriteHotRush control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteHotRush;
         
         /// <summary>
         /// phFavoriteOrderCancellation control.
@@ -65,6 +74,51 @@ namespace Tingle_WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteOrderCancellation;
+        
+        /// <summary>
+        /// phFavoriteMustInclude control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteMustInclude;
+        
+        /// <summary>
+        /// phFavoriteSampleRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteSampleRequest;
+        
+        /// <summary>
+        /// phFavoriteLowInventory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteLowInventory;
+        
+        /// <summary>
+        /// phFavoritePriceChangeRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phFavoritePriceChangeRequest;
+        
+        /// <summary>
+        /// phFavoriteRequestForCheck control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder phFavoriteRequestForCheck;
         
         /// <summary>
         /// UpdatePanel1 control.
@@ -85,6 +139,24 @@ namespace Tingle_WebForms {
         protected global::System.Web.UI.WebControls.CheckBox cbFavoriteExpeditedOrder;
         
         /// <summary>
+        /// cbFavoriteDirectOrder control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbFavoriteDirectOrder;
+        
+        /// <summary>
+        /// cbFavoriteHotRush control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbFavoriteHotRush;
+        
+        /// <summary>
         /// cbFavoriteOrderCancellation control.
         /// </summary>
         /// <remarks>
@@ -92,6 +164,42 @@ namespace Tingle_WebForms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CheckBox cbFavoriteOrderCancellation;
+        
+        /// <summary>
+        /// cbFavoriteMustInclude control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbFavoriteMustInclude;
+        
+        /// <summary>
+        /// UpdatePanel3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel3;
+        
+        /// <summary>
+        /// cbFavoriteSampleRequest control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbFavoriteSampleRequest;
+        
+        /// <summary>
+        /// cbFavoriteLowInventory control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbFavoriteLowInventory;
         
         /// <summary>
         /// UpdatePanel2 control.
@@ -112,12 +220,12 @@ namespace Tingle_WebForms {
         protected global::System.Web.UI.WebControls.CheckBox cbFavoritePriceChangeRequest;
         
         /// <summary>
-        /// btnSubmit control.
+        /// cbFavoriteRequestForCheck control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSubmit;
+        protected global::System.Web.UI.WebControls.CheckBox cbFavoriteRequestForCheck;
     }
 }

@@ -10,7 +10,7 @@ namespace Tingle_WebForms.Models
     public class ExpeditedOrderForm
     {
         [Key]
-        public int ExpeditedOrderFormID { get; set; }
+        public int RecordId { get; set; }
 
         public DateTime Timestamp { get; set; }
 
@@ -65,7 +65,7 @@ namespace Tingle_WebForms.Models
         public string AdditionalInfo { get; set; }
 
         [MaxLength(100)]
-        public string ExpeditorHandling { get; set; }
+        public string RequestHandler { get; set; }
 
         [MaxLength(10)]
         public string Company { get; set; }
@@ -80,6 +80,12 @@ namespace Tingle_WebForms.Models
 
         [MaxLength(1000)]
         public string CCFormToEmail { get; set; }
+
+        [MaxLength(4000)]
+        public string CompletedNotes { get; set; }
+
+        [MaxLength(1000)]
+        public string CCCompletedFormToEmail { get; set; }
 
     }
 

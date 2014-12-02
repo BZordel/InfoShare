@@ -49,6 +49,15 @@ namespace Tingle_WebForms.Forms {
         protected global::System.Web.UI.WebControls.Panel pnlForm;
         
         /// <summary>
+        /// UpdatePanel1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
+        
+        /// <summary>
         /// ValidationSummary1 control.
         /// </summary>
         /// <remarks>
@@ -229,6 +238,24 @@ namespace Tingle_WebForms.Forms {
         protected global::System.Web.UI.HtmlControls.HtmlInputText txtInstallDate;
         
         /// <summary>
+        /// cbShipToSection control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox cbShipToSection;
+        
+        /// <summary>
+        /// tr1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tr1;
+        
+        /// <summary>
         /// txtShipToName control.
         /// </summary>
         /// <remarks>
@@ -247,6 +274,15 @@ namespace Tingle_WebForms.Forms {
         protected global::System.Web.UI.WebControls.TextBox txtShipToAddress;
         
         /// <summary>
+        /// tr2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tr2;
+        
+        /// <summary>
         /// txtShipToCity control.
         /// </summary>
         /// <remarks>
@@ -263,6 +299,15 @@ namespace Tingle_WebForms.Forms {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtShipToState;
+        
+        /// <summary>
+        /// tr3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTableRow tr3;
         
         /// <summary>
         /// txtShipToZip control.

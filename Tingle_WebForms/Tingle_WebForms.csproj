@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;ro</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -280,9 +280,13 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.tooltip.min.css" />
+    <Content Include="DirectOrderForm.aspx" />
+    <Content Include="HotRushForm.aspx" />
+    <Content Include="Images\search.jpg" />
+    <Content Include="LowInventoryForm.aspx" />
+    <Content Include="MustIncludeForm.aspx" />
     <Content Include="OrderCancellationForm.aspx" />
     <Content Include="PriceChangeRequestForm.aspx" />
-    <Content Include="RepAdvArchiveExpeditedOrder.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="ExpeditedOrderForm.aspx" />
     <Content Include="Images\accent.png" />
@@ -305,18 +309,18 @@
     <Content Include="bin\Tingle_WebForms.dll.config" />
     <None Include="Scripts\jquery-2.0.3.intellisense.js" />
     <Content Include="ReadMe.txt" />
-    <Content Include="RepAdvArchiveOrderCancellation.aspx" />
-    <Content Include="RepAdvArchivePriceChangeRequest.aspx" />
-    <Content Include="RepAdvExpeditedOrderForm.aspx" />
-    <Content Include="RepAdvOrderCancellation.aspx" />
-    <Content Include="RepAdvPriceChangeRequest.aspx" />
-    <Content Include="RepArchiveExpeditedOrder.aspx" />
-    <Content Include="RepArchiveOrderCancellation.aspx" />
-    <Content Include="RepArchivePriceChangeRequest.aspx" />
-    <Content Include="RepExpeditedOrderForm.aspx" />
-    <Content Include="RepOrderCancellation.aspx" />
+    <Content Include="ReportDirectOrder.aspx" />
+    <Content Include="ReportExpeditedOrder.aspx" />
+    <Content Include="ReportHotRush.aspx" />
+    <Content Include="ReportLowInventory.aspx" />
+    <Content Include="ReportMustInclude.aspx" />
+    <Content Include="ReportOrderCancellation.aspx" />
+    <Content Include="ReportPriceChangeRequest.aspx" />
+    <Content Include="ReportRequestForCheck.aspx" />
     <Content Include="Reports.aspx" />
-    <Content Include="RepPriceChangeRequest.aspx" />
+    <Content Include="ReportSampleRequest.aspx" />
+    <Content Include="RequestForCheckForm.aspx" />
+    <Content Include="SampleRequestForm.aspx" />
     <Content Include="Scripts\jquery-2.0.3.js" />
     <Content Include="Scripts\jquery-2.0.3.min.js" />
     <Content Include="Scripts\jquery-ui-1.10.3.js" />
@@ -347,6 +351,7 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Search.aspx" />
     <Content Include="ToDo.txt" />
     <Content Include="Unauthorized.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -404,6 +409,27 @@
       <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="DirectOrderForm.aspx.cs">
+      <DependentUpon>DirectOrderForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DirectOrderForm.aspx.designer.cs">
+      <DependentUpon>DirectOrderForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HotRushForm.aspx.cs">
+      <DependentUpon>HotRushForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HotRushForm.aspx.designer.cs">
+      <DependentUpon>HotRushForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LowInventoryForm.aspx.cs">
+      <DependentUpon>LowInventoryForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LowInventoryForm.aspx.designer.cs">
+      <DependentUpon>LowInventoryForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\201411221715041_InitialCreate.cs" />
     <Compile Include="Migrations\201411221715041_InitialCreate.Designer.cs">
       <DependentUpon>201411221715041_InitialCreate.cs</DependentUpon>
@@ -428,10 +454,64 @@
     <Compile Include="Migrations\201411250143163_AddCompany.Designer.cs">
       <DependentUpon>201411250143163_AddCompany.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201411252349105_ChangeExpeditorHandlingToRequestHandler.cs" />
+    <Compile Include="Migrations\201411252349105_ChangeExpeditorHandlingToRequestHandler.Designer.cs">
+      <DependentUpon>201411252349105_ChangeExpeditorHandlingToRequestHandler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411260509393_AddCompletedNotesAndCCCompletedFormToEmail.cs" />
+    <Compile Include="Migrations\201411260509393_AddCompletedNotesAndCCCompletedFormToEmail.Designer.cs">
+      <DependentUpon>201411260509393_AddCompletedNotesAndCCCompletedFormToEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411262230025_ModelUpdate.cs" />
+    <Compile Include="Migrations\201411262230025_ModelUpdate.Designer.cs">
+      <DependentUpon>201411262230025_ModelUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411262345057_AddHotRushForm.cs" />
+    <Compile Include="Migrations\201411262345057_AddHotRushForm.Designer.cs">
+      <DependentUpon>201411262345057_AddHotRushForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411270305365_AddLowInventoryForm.cs" />
+    <Compile Include="Migrations\201411270305365_AddLowInventoryForm.Designer.cs">
+      <DependentUpon>201411270305365_AddLowInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411270409082_ChangeQuantityToString.cs" />
+    <Compile Include="Migrations\201411270409082_ChangeQuantityToString.Designer.cs">
+      <DependentUpon>201411270409082_ChangeQuantityToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411270421031_AddSampleRequestForm.cs" />
+    <Compile Include="Migrations\201411270421031_AddSampleRequestForm.Designer.cs">
+      <DependentUpon>201411270421031_AddSampleRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411271646102_AddDirectOrderForm.cs" />
+    <Compile Include="Migrations\201411271646102_AddDirectOrderForm.Designer.cs">
+      <DependentUpon>201411271646102_AddDirectOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411281917180_AddRequestForCheckForm.cs" />
+    <Compile Include="Migrations\201411281917180_AddRequestForCheckForm.Designer.cs">
+      <DependentUpon>201411281917180_AddRequestForCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201411282016066_AddMustIncludeForm.cs" />
+    <Compile Include="Migrations\201411282016066_AddMustIncludeForm.Designer.cs">
+      <DependentUpon>201411282016066_AddMustIncludeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DirectOrderForm.cs" />
     <Compile Include="Models\FavoriteForm.cs" />
-    <Compile Include="Models\OrderCancellation.cs" />
+    <Compile Include="Models\HotRushForm.cs" />
+    <Compile Include="Models\LowInventoryForm.cs" />
+    <Compile Include="Models\MustIncludeForm.cs" />
+    <Compile Include="Models\OrderCancellationForm.cs" />
     <Compile Include="Models\PriceChangeRequestForm.cs" />
     <Compile Include="Models\PurchaseOrderStatus.cs" />
+    <Compile Include="Models\RequestForCheckForm.cs" />
+    <Compile Include="Models\SampleRequestForm.cs" />
+    <Compile Include="Models\SearchModel.cs" />
+    <Compile Include="MustIncludeForm.aspx.cs">
+      <DependentUpon>MustIncludeForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MustIncludeForm.aspx.designer.cs">
+      <DependentUpon>MustIncludeForm.aspx</DependentUpon>
+    </Compile>
     <Compile Include="OrderCancellationForm.aspx.cs">
       <DependentUpon>OrderCancellationForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -445,13 +525,6 @@
     </Compile>
     <Compile Include="PriceChangeRequestForm.aspx.designer.cs">
       <DependentUpon>PriceChangeRequestForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="RepAdvArchiveExpeditedOrder.aspx.cs">
-      <DependentUpon>RepAdvArchiveExpeditedOrder.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RepAdvArchiveExpeditedOrder.aspx.designer.cs">
-      <DependentUpon>RepAdvArchiveExpeditedOrder.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -498,75 +571,61 @@
       <DependentUpon>Privacy.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepAdvArchiveOrderCancellation.aspx.cs">
-      <DependentUpon>RepAdvArchiveOrderCancellation.aspx</DependentUpon>
+    <Compile Include="ReportDirectOrder.aspx.cs">
+      <DependentUpon>ReportDirectOrder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepAdvArchiveOrderCancellation.aspx.designer.cs">
-      <DependentUpon>RepAdvArchiveOrderCancellation.aspx</DependentUpon>
+    <Compile Include="ReportDirectOrder.aspx.designer.cs">
+      <DependentUpon>ReportDirectOrder.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepAdvArchivePriceChangeRequest.aspx.cs">
-      <DependentUpon>RepAdvArchivePriceChangeRequest.aspx</DependentUpon>
+    <Compile Include="ReportExpeditedOrder.aspx.cs">
+      <DependentUpon>ReportExpeditedOrder.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepAdvArchivePriceChangeRequest.aspx.designer.cs">
-      <DependentUpon>RepAdvArchivePriceChangeRequest.aspx</DependentUpon>
+    <Compile Include="ReportExpeditedOrder.aspx.designer.cs">
+      <DependentUpon>ReportExpeditedOrder.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepAdvExpeditedOrderForm.aspx.cs">
-      <DependentUpon>RepAdvExpeditedOrderForm.aspx</DependentUpon>
+    <Compile Include="ReportHotRush.aspx.cs">
+      <DependentUpon>ReportHotRush.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepAdvExpeditedOrderForm.aspx.designer.cs">
-      <DependentUpon>RepAdvExpeditedOrderForm.aspx</DependentUpon>
+    <Compile Include="ReportHotRush.aspx.designer.cs">
+      <DependentUpon>ReportHotRush.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepAdvOrderCancellation.aspx.cs">
-      <DependentUpon>RepAdvOrderCancellation.aspx</DependentUpon>
+    <Compile Include="ReportLowInventory.aspx.cs">
+      <DependentUpon>ReportLowInventory.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepAdvOrderCancellation.aspx.designer.cs">
-      <DependentUpon>RepAdvOrderCancellation.aspx</DependentUpon>
+    <Compile Include="ReportLowInventory.aspx.designer.cs">
+      <DependentUpon>ReportLowInventory.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepAdvPriceChangeRequest.aspx.cs">
-      <DependentUpon>RepAdvPriceChangeRequest.aspx</DependentUpon>
+    <Compile Include="ReportMustInclude.aspx.cs">
+      <DependentUpon>ReportMustInclude.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepAdvPriceChangeRequest.aspx.designer.cs">
-      <DependentUpon>RepAdvPriceChangeRequest.aspx</DependentUpon>
+    <Compile Include="ReportMustInclude.aspx.designer.cs">
+      <DependentUpon>ReportMustInclude.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepArchiveExpeditedOrder.aspx.cs">
-      <DependentUpon>RepArchiveExpeditedOrder.aspx</DependentUpon>
+    <Compile Include="ReportOrderCancellation.aspx.cs">
+      <DependentUpon>ReportOrderCancellation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepArchiveExpeditedOrder.aspx.designer.cs">
-      <DependentUpon>RepArchiveExpeditedOrder.aspx</DependentUpon>
+    <Compile Include="ReportOrderCancellation.aspx.designer.cs">
+      <DependentUpon>ReportOrderCancellation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepArchiveOrderCancellation.aspx.cs">
-      <DependentUpon>RepArchiveOrderCancellation.aspx</DependentUpon>
+    <Compile Include="ReportPriceChangeRequest.aspx.cs">
+      <DependentUpon>ReportPriceChangeRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepArchiveOrderCancellation.aspx.designer.cs">
-      <DependentUpon>RepArchiveOrderCancellation.aspx</DependentUpon>
+    <Compile Include="ReportPriceChangeRequest.aspx.designer.cs">
+      <DependentUpon>ReportPriceChangeRequest.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepArchivePriceChangeRequest.aspx.cs">
-      <DependentUpon>RepArchivePriceChangeRequest.aspx</DependentUpon>
+    <Compile Include="ReportRequestForCheck.aspx.cs">
+      <DependentUpon>ReportRequestForCheck.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepArchivePriceChangeRequest.aspx.designer.cs">
-      <DependentUpon>RepArchivePriceChangeRequest.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="RepExpeditedOrderForm.aspx.cs">
-      <DependentUpon>RepExpeditedOrderForm.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RepExpeditedOrderForm.aspx.designer.cs">
-      <DependentUpon>RepExpeditedOrderForm.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="RepOrderCancellation.aspx.cs">
-      <DependentUpon>RepOrderCancellation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="RepOrderCancellation.aspx.designer.cs">
-      <DependentUpon>RepOrderCancellation.aspx</DependentUpon>
+    <Compile Include="ReportRequestForCheck.aspx.designer.cs">
+      <DependentUpon>ReportRequestForCheck.aspx</DependentUpon>
     </Compile>
     <Compile Include="Reports.aspx.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
@@ -575,12 +634,33 @@
     <Compile Include="Reports.aspx.designer.cs">
       <DependentUpon>Reports.aspx</DependentUpon>
     </Compile>
-    <Compile Include="RepPriceChangeRequest.aspx.cs">
-      <DependentUpon>RepPriceChangeRequest.aspx</DependentUpon>
+    <Compile Include="ReportSampleRequest.aspx.cs">
+      <DependentUpon>ReportSampleRequest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="RepPriceChangeRequest.aspx.designer.cs">
-      <DependentUpon>RepPriceChangeRequest.aspx</DependentUpon>
+    <Compile Include="ReportSampleRequest.aspx.designer.cs">
+      <DependentUpon>ReportSampleRequest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RequestForCheckForm.aspx.cs">
+      <DependentUpon>RequestForCheckForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RequestForCheckForm.aspx.designer.cs">
+      <DependentUpon>RequestForCheckForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SampleRequestForm.aspx.cs">
+      <DependentUpon>SampleRequestForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SampleRequestForm.aspx.designer.cs">
+      <DependentUpon>SampleRequestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -648,6 +728,36 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201411250143163_AddCompany.resx">
       <DependentUpon>201411250143163_AddCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411252349105_ChangeExpeditorHandlingToRequestHandler.resx">
+      <DependentUpon>201411252349105_ChangeExpeditorHandlingToRequestHandler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411260509393_AddCompletedNotesAndCCCompletedFormToEmail.resx">
+      <DependentUpon>201411260509393_AddCompletedNotesAndCCCompletedFormToEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411262230025_ModelUpdate.resx">
+      <DependentUpon>201411262230025_ModelUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411262345057_AddHotRushForm.resx">
+      <DependentUpon>201411262345057_AddHotRushForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411270305365_AddLowInventoryForm.resx">
+      <DependentUpon>201411270305365_AddLowInventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411270409082_ChangeQuantityToString.resx">
+      <DependentUpon>201411270409082_ChangeQuantityToString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411270421031_AddSampleRequestForm.resx">
+      <DependentUpon>201411270421031_AddSampleRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411271646102_AddDirectOrderForm.resx">
+      <DependentUpon>201411271646102_AddDirectOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411281917180_AddRequestForCheckForm.resx">
+      <DependentUpon>201411281917180_AddRequestForCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201411282016066_AddMustIncludeForm.resx">
+      <DependentUpon>201411282016066_AddMustIncludeForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

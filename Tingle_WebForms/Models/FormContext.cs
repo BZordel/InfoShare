@@ -17,7 +17,19 @@ namespace Tingle_WebForms.Models
 
         public DbSet<PriceChangeRequestForm> PriceChangeRequestForms { get; set; }
 
-        public DbSet<OrderCancellation> OrderCancellationForms { get; set; }
+        public DbSet<OrderCancellationForm> OrderCancellationForms { get; set; }
+
+        public DbSet<HotRushForm> HotRushForms { get; set; }
+
+        public DbSet<LowInventoryForm> LowInventoryForms { get; set; }
+
+        public DbSet<SampleRequestForm> SampleRequestForms { get; set; }
+
+        public DbSet<DirectOrderForm> DirectOrderForms { get; set; }
+
+        public DbSet<RequestForCheckForm> RequestForCheckForms { get; set; }
+
+        public DbSet<MustIncludeForm> MustIncludeForms { get; set; }
 
         public DbSet<ExpediteCode> ExpediteCodes { get; set; }
 

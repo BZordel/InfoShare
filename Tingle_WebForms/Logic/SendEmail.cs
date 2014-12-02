@@ -21,13 +21,16 @@ namespace Tingle_WebForms.Logic
 
                 FormContext ctx = new FormContext();
 
-                ICollection<EmailAddress> emailAddresses = ctx.EmailAddresses.Where(ea => ea.Status == 1 && ea.TForm.FormID == newForm.FormID).ToList();
-
-                if (emailAddresses.Count() > 0 && sendToCC == true)
+                if (newForm != null)
                 {
-                    foreach (EmailAddress email in emailAddresses)
+                    ICollection<EmailAddress> emailAddresses = ctx.EmailAddresses.Where(ea => ea.Status == 1 && ea.TForm.FormID == newForm.FormID).ToList();
+
+                    if (emailAddresses.Count() > 0 && sendToCC == true)
                     {
-                        completeMessage.CC.Add(email.Address);
+                        foreach (EmailAddress email in emailAddresses)
+                        {
+                            completeMessage.CC.Add(email.Address);
+                        }
                     }
                 }
 

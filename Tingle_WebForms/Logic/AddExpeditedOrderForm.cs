@@ -21,6 +21,7 @@ namespace Tingle_WebForms.Logic
                     var submissionStatus = _db.Statuses.SingleOrDefault(s => s.StatusId == status.StatusId);
 
                     var newForm = new ExpeditedOrderForm();
+                    newForm.Timestamp = DateTime.Now;
                     newForm.OowOrderNumber = oowOrderNumber;
                     newForm.Customer = customer;
                     newForm.AccountNumber = accountNumber;
@@ -46,7 +47,7 @@ namespace Tingle_WebForms.Logic
                     _db.ExpeditedOrderForms.Add(newForm);
                     _db.SaveChanges();
 
-                    formId = newForm.ExpeditedOrderFormID;
+                    formId = newForm.RecordId;
                 }
                 return true;
             }

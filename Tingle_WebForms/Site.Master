@@ -36,7 +36,13 @@
     </asp:ScriptManager>
     <header>
         <div class="content-wrapper">
-            <div style="padding-top:20px; text-align:center;">
+            <div style="width:100%; text-align:right; height:30px; padding-top:5px">
+                <asp:PlaceHolder runat="server" ID="phSearch">
+                    <asp:TextBox runat="server" ID="txtSearch" Placeholder="Search For Form Data..."></asp:TextBox> 
+                    <asp:ImageButton runat="server" ID="txtSearchSubmit" CssClass="searchbox-submit" ImageUrl="~/Images/search.jpg" ImageAlign="Top" OnClick="txtSearchSubmit_Click" />
+                </asp:PlaceHolder>
+            </div>
+            <div style="text-align:center;">
                 <p class="site-title">
                     <a runat="server" href="~/">
                         <img src="/Images/Logo.jpg" /></a>

@@ -17,7 +17,6 @@ namespace Tingle_WebForms.Migrations
 
         protected override void Seed(Tingle_WebForms.Models.FormContext context)
         {
-
             //Seed Roles
             UserRoles roleUser = new UserRoles{RoleName = "User",RoleDescription = "User can submit forms."};
             UserRoles roleReportsUser = new UserRoles{RoleName = "User",RoleDescription = "User can view reports, but not edit them."};
@@ -64,9 +63,81 @@ namespace Tingle_WebForms.Migrations
                 Timestamp = DateTime.Now
             };
 
+            TForm hotRushForm = new TForm
+            {
+                FormCreator = "Admin",
+                FormName = "Hot Rush",
+                FormNameHtml = "Hot Rush",
+                FormUrl = "HotRushForm.aspx",
+                Notes = "Hot Rush Form Notes",
+                Status = 1,
+                Timestamp = DateTime.Now
+            };
+
+            TForm lowInventory = new TForm
+            {
+                FormCreator = "Admin",
+                FormName = "Low Inventory",
+                FormNameHtml = "Low Inventory",
+                FormUrl = "LowInventoryForm.aspx",
+                Notes = "Low Inventory Form Notes",
+                Status = 1,
+                Timestamp = DateTime.Now
+            };
+
+            TForm sampleRequest = new TForm
+            {
+                FormCreator = "Admin",
+                FormName = "Sample Request",
+                FormNameHtml = "Sample Request",
+                FormUrl = "SampleRequestForm.aspx",
+                Notes = "Sample Request Form Notes",
+                Status = 1,
+                Timestamp = DateTime.Now
+            };
+
+            TForm directOrder = new TForm
+            {
+                FormCreator = "Admin",
+                FormName = "Direct Order",
+                FormNameHtml = "Direct Order",
+                FormUrl = "DirectOrderForm.aspx",
+                Notes = "Direct Order Form Notes",
+                Status = 1,
+                Timestamp = DateTime.Now
+            };
+
+            TForm requestForCheck = new TForm
+            {
+                FormCreator = "Admin",
+                FormName = "Request For Check",
+                FormNameHtml = "Request For<br />Check",
+                FormUrl = "RequestForCheckForm.aspx",
+                Notes = "Request For Check Form Notes",
+                Status = 1,
+                Timestamp = DateTime.Now
+            };
+
+            TForm mustIncludeForm = new TForm
+            {
+                FormCreator = "Admin",
+                FormName = "Must Include",
+                FormNameHtml = "Must Include",
+                FormUrl = "MustIncludeForm.aspx",
+                Notes = "Must Include Form Notes",
+                Status = 1,
+                Timestamp = DateTime.Now
+            };
+
             context.TForms.AddOrUpdate(t => t.FormName, orderCancellation);
             context.TForms.AddOrUpdate(t => t.FormName, expeditedOrder);
             context.TForms.AddOrUpdate(t => t.FormName, priceChangeRequest);
+            context.TForms.AddOrUpdate(t => t.FormName, hotRushForm);
+            context.TForms.AddOrUpdate(t => t.FormName, lowInventory);
+            context.TForms.AddOrUpdate(t => t.FormName, sampleRequest);
+            context.TForms.AddOrUpdate(t => t.FormName, directOrder);
+            context.TForms.AddOrUpdate(t => t.FormName, requestForCheck);
+            context.TForms.AddOrUpdate(t => t.FormName, mustIncludeForm);
 
 
             //Seed ExpediteCodes
